@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez l'histoire du royaume de Manigri au Bénin, ses rois, sa culture et son héritage depuis 1670. Une initiative du Collectif Adjacoco.">
+  <meta name="keywords" content="Manigri, Histoire du Bénin, Rois de Manigri, Culture béninoise, Collectif Adjacoco, Royaumes africains, Traditions béninoises, Patrimoine culturel, Histoire de l'Afrique, Bénin">
+
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Histoire de Manigri | Rois & Héritage" />
+  <meta property="og:description" content="Plongez dans 3 siècles d’histoire du royaume de Manigri, au Bénin." />
+  <meta property="og:image" content="URL_VERS_TON_IMAGE.jpg" />
+  <meta property="og:url" content="https://tonsite.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Histoire de Manigri",
+      "url": "https://tonsite.com",
+      "description": "Ressource dédiée à l'histoire du royaume de Manigri au Bénin, ses rois et sa culture.",
+      "inLanguage": "fr",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Collectif Adjacoco"
+      }
+    }
+  </script>
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CollectifAdjacoco">
+  <meta name="twitter:title" content="Histoire de Manigri | Rois & Héritage">
+  <meta name="twitter:description" content="Plongez dans 3 siècles d’histoire du royaume de Manigri, au Bénin.">
+  <meta name="twitter:image" content="URL_VERS_TON_IMAGE.jpg">
+
+  <title>Histoire de Manigri</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://tonsite.com/" />
+
+  <!-- ✅ Tailwind CSS v3.4 via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- ✅ ScrollReveal pour animation -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+
+  <!-- Optional: Custom Tailwind config (couleurs personnalisées si besoin) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            jaune: {
+              700: '#b45309',
+              800: '#92400e',
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-yellow-800 text-white p-6 shadow-md">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <h1 class="text-2xl font-bold mb-4 md:mb-0">Manigri - Histoire & Héritage</h1>
+      <nav class="space-x-4 text-sm md:text-base">
+        <a href="#histoire" class="hover:underline">Histoire</a>
+        <a href="#personnalites" class="hover:underline">Personnalités</a>
+        <a href="#culture" class="hover:underline">Culture</a>
+        <a href="#timeline" class="hover:underline">Rois</a>
+        <a href="#document" class="hover:underline">PDF</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <!-- Hero Section (Tailwind CSS v4 compatible) -->
+  <section class="relative" data-sr>
+    <!-- Gradient background -->
+    <div class="absolute inset-0 bg-gradient-to-t from-yellow-100 to-transparent z-0"></div>
+  
+    <div class="relative z-10 text-center mx-auto">
+      <!-- Image with hover effect -->
+      <div class="relative">
+        <img 
+          class="mx-auto object-cover w-full h-[500px] md:h-[600px] transition-transform duration-500 hover:scale-110"
+          src="https://images.unsplash.com/photo-1597684233833-329bf7035965?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Manigri"
+        >
+        <!-- Overlay with centered text -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/60 px-4 text-white text-center">
+          <h2 class="text-3xl md:text-5xl font-extrabold drop-shadow-md">Bienvenue sur le site officiel de l'Histoire de Manigri</h2>
+          <p class="text-sm md:text-base max-w-2xl">
+            Explorez plus de trois siècles de royauté, de traditions et de mémoire collective. L'héritage du royaume de Manigri vous attend.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Section Histoire -->
+  <section id="histoire" class="py-12 px-6 bg-white" data-sr>
+    <div class="container mx-auto max-w-4xl">
+      <h3 class="text-3xl font-semibold mb-6 border-b pb-2">Le Parcours Historique de Manigri</h3>
+      <p class="mb-4">Manigri est une localité béninoise dont l’histoire remonte aux années 1670. D’un royaume fondé par Orou Goura, chassé d’Ilé-Ifé, jusqu’à la modernité, le village a connu une riche lignée de rois et chefs coutumiers tels que Olou Adjawoussi, Elèphan, et Amoussou Abdoulaye Akobi.</p>
+      <p class="mb-4">Le village a été marqué par des luttes de succession, des réformes sociales, l’introduction de religions étrangères, et le développement économique local porté par ses dirigeants.</p>
+    </div>
+  </section>
+
+  <!-- Section Personnalités -->
+  <section id="personnalites" class="py-12 px-6 bg-gray-50" data-sr>
+    <div class="container mx-auto max-w-4xl">
+      <h3 class="text-3xl font-semibold mb-6 border-b pb-2">Personnalités Historiques</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Olou Djawoussi – Fondateur légendaire et roi ancestral</li>
+        <li>Amoussou Abdoulaye Akobi – Chef de canton (1954-1974)</li>
+        <li>Elèphan – Roi symbolisé par la peau de buffle</li>
+        <li>Labountou – Dernier roi avant Olou Okiti Oyédékpo</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section Timeline Interactive -->
+  <section id="timeline" class="py-20 px-6 bg-white" data-sr>
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-semibold mb-16 text-center">Chronologie des Rois & Dirigeants de Manigri</h3>
+      <div class="overflow-x-auto pb-12">
+        <div class="relative min-w-[2200px] h-48">
+          <div class="absolute flex gap-16 top-0 left-0 z-10 px-6">
+            <!-- Exemple de point (copier pour chaque personnage) -->
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-yellow-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-yellow-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-yellow-700 whitespace-nowrap">Okoukou Djègbè</div>
+                    <div class="text-xs text-gray-600">1er Roi</div>
+                </div>
+            </div>
+
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-yellow-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-yellow-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-yellow-700 whitespace-nowrap">Olou Adjawoussi</div>
+                    <div class="text-xs text-gray-600">2e Roi</div>
+                </div>
+            </div>
+
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-yellow-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-yellow-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-yellow-700 whitespace-nowrap">Olou Olossoumahé</div>
+                    <div class="text-xs text-gray-600">3e Roi</div>
+                </div>
+            </div>
+
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-yellow-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-yellow-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-yellow-700 whitespace-nowrap">Olou Elèphan</div>
+                    <div class="text-xs text-gray-600">4e Roi</div>
+                </div>
+            </div>
+
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-yellow-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-yellow-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-yellow-700 whitespace-nowrap">Olou Olokohiko</div>
+                    <div class="text-xs text-gray-600">5e Roi</div>
+                </div>
+            </div>
+
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-gray-600 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-gray-600 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-gray-800 whitespace-nowrap">Alagbahé</div>
+                    <div class="text-xs text-gray-600">1er Chef Coutumier</div>
+                </div>
+            </div>
+
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-yellow-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-yellow-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-yellow-700 whitespace-nowrap">Elèkoun</div>
+                    <div class="text-xs text-gray-600">6e Roi</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-gray-600 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-gray-600 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-gray-800 whitespace-nowrap">Affo Koukpé</div>
+                    <div class="text-xs text-gray-600">2e Chef Coutumier</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-gray-600 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-gray-600 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-gray-800 whitespace-nowrap">Babalawo Okini</div>
+                    <div class="text-xs text-gray-600">3e Chef Coutumier</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-blue-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-blue-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-blue-800 whitespace-nowrap">Wohou Kakakou</div>
+                    <div class="text-xs text-gray-600">1er Chef de Canton</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-blue-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-blue-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-blue-800 whitespace-nowrap">Atchadé Boukohou</div>
+                    <div class="text-xs text-gray-600">2e Chef de Canton</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-blue-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-blue-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-blue-800 whitespace-nowrap">Djaboutouboutou</div>
+                    <div class="text-xs text-gray-600">3e Chef Canton, 7e Roi</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-blue-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-blue-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-blue-800 whitespace-nowrap">Okpéé</div>
+                    <div class="text-xs text-gray-600">4e Chef de Canton</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-blue-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-blue-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-blue-800 whitespace-nowrap">A. A. Abdoulaye</div>
+                    <div class="text-xs text-gray-600">5e Chef de Canton</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-green-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-green-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-green-800 whitespace-nowrap">S. Sidi Abdoulaye</div>
+                    <div class="text-xs text-gray-600">1er Maire</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-green-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-green-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-green-800 whitespace-nowrap">Dontè Rigobert</div>
+                    <div class="text-xs text-gray-600">2e Maire</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-yellow-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-yellow-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-yellow-700 whitespace-nowrap">Laboutou / Agbodja</div>
+                    <div class="text-xs text-gray-600">8e Roi</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-gray-600 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-gray-600 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-gray-800 whitespace-nowrap">Alagbé Soumanou</div>
+                    <div class="text-xs text-gray-600">Chef (Ilé-iloumanhou)</div>
+                </div>
+            </div>
+            
+            <div class="relative w-40 text-center">
+                <div class="w-4 h-4 bg-yellow-500 rounded-full mx-auto z-10"></div>
+                <div class="h-16 w-px bg-yellow-500 mx-auto"></div>
+                <div class="mt-2">
+                    <div class="text-sm font-semibold text-yellow-700 whitespace-nowrap">Okiti Oyédékpo</div>
+                    <div class="text-xs text-gray-600">9e Roi</div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Document PDF -->
+  <section id="document" class="py-20 px-6 bg-gray-50" data-sr>
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-6 border-b pb-2">Visionner le Document Historique</h3>
+      <div class="max-w-6xl mx-auto overflow-hidden">
+        <embed id="pdfIframe" src="histoireManigriV2.pdf" style="display:none;" class="w-full h-[90vh] rounded-lg shadow-lg"  type="application/pdf" />
+      </div>
+      <p class="mt-4 text-sm text-gray-500">
+        Vous pouvez faire défiler ou télécharger le document en plein écran pour une meilleure lecture.
+      </p>
+      <a href="histoireManigriV2.pdf" target="_blank" class="inline-block mt-3 text-blue-600 hover:underline text-sm">
+        Ouvrir en plein écran / Télécharger
+      </a>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="py-12 px-6 bg-gray-50" data-sr>
+    <div class="container mx-auto max-w-xl">
+      <h3 class="text-3xl font-semibold mb-6 border-b pb-2">Contact</h3>
+      <p>Pour contribuer ou en savoir plus, contactez le Collectif Adjacoco.</p>
+      <form class="mt-6">
+        <input type="text" placeholder="Votre nom" class="w-full p-3 border rounded mb-4 focus:outline-none focus:ring-2 focus:ring-yellow-700" />
+        <input type="email" placeholder="Votre e-mail" class="w-full p-3 border rounded mb-4 focus:outline-none focus:ring-2 focus:ring-yellow-700" />
+        <textarea placeholder="Votre message" rows="4" class="w-full p-3 border rounded mb-4 focus:outline-none focus:ring-2 focus:ring-yellow-700"></textarea>
+        <button type="submit" class="bg-yellow-700 text-white px-6 py-2 rounded hover:bg-yellow-800 transition">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-800 text-white text-center p-4 mt-12">
+    <p>&copy; 2025 Collectif Adjacoco. Tous droits réservés.</p>
+  </footer>
+  <script>
+    window.onload = function () {
+      setTimeout(() => {
+        const el = document.getElementById('pdfIframe');
+        el.style.display = 'block';
+        el.classList.remove('opacity-0');
+        el.classList.add('opacity-100');
+      }, 5000);
+    };
+  </script>
+</body>
+</html>
