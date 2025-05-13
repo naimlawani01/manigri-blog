@@ -319,8 +319,7 @@
   <section id="document" class="py-20 px-6 bg-gray-50" data-sr>
     <div class="container mx-auto text-center">
       <h3 class="text-3xl font-semibold mb-6 border-b pb-2">Visionner le Document Historique</h3>
-      <div class="max-w-6xl mx-auto overflow-hidden">
-        <embed id="pdfIframe" src="histoireManigriV2.pdf" style="display:none;" class="w-full h-[90vh] rounded-lg shadow-lg"  type="application/pdf" />
+      <div id="pdfContainer" class="max-w-6xl mx-auto overflow-hidden">
       </div>
       <p class="mt-4 text-sm text-gray-500">
         Vous pouvez faire défiler ou télécharger le document en plein écran pour une meilleure lecture.
@@ -347,8 +346,8 @@
       </p>
       <!-- i want a modern shadow for this card -->
       <div class="bg-white p-6 rounded-lg shadow-yellow-50/50 shadow-xl">
-        <p class="text-lg font-medium text-gray-800">AKOBI ALIDOU</p>
-        <p class="text-gray-600">Référent pour le projet Histoire de Manigri</p>
+          <p class="text-gray-600">Pour les contacts, ils peuvent joindre :</p>
+          <p class="text-lg font-medium text-gray-800">AKOBI ALIDOU</p>
         <p class="mt-2 text-gray-700">
           📞 Téléphone : <a href="tel:+22994768339" class="text-blue-600 hover:underline">+229 94 76 83 39</a>
         </p>
@@ -361,14 +360,25 @@
     <p>&copy; 2025 Imrane Tech Solutions. Tous droits réservés.</p>
   </footer>
   <script>
-    window.onload = function () {
+    window.addEventListener("DOMContentLoaded", () => {
+      // Crée l'iframe APRÈS chargement complet
       setTimeout(() => {
-        const el = document.getElementById('pdfIframe');
-        el.style.display = 'block';
-        el.classList.remove('opacity-0');
-        el.classList.add('opacity-100');
-      }, 5000);
-    };
+        const iframe = document.createElement("iframe");
+        iframe.src = "histoireManigriV2.pdf";
+        iframe.style.width = "100%";
+        iframe.style.height = "90vh";
+        iframe.style.border = "none";
+        iframe.style.display = "block";
+
+        // Ajoute un wrapper pour forcer le comportement
+        const wrapper = document.getElementById("pdfContainer");
+        wrapper.appendChild(iframe);
+
+        // Forcer le scroll en haut pour éviter le saut
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }, 500);
+      window.scrollTo({ top: 0, behavior: "instant" });
+    });
   </script>
 </body>
 </html>
